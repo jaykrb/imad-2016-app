@@ -1,7 +1,7 @@
 console.log('Loaded!');
 //changing text
 var element =document.getElementById('main.text');
-element.Inourhtml = 'New value';
+element.Innerhtml = 'New value';
 //move the image
 var img = document.getElementById('madi.png');
 var marginleft =0;
