@@ -7,7 +7,7 @@ app.use(morgan('combined'));
 
 
 var content = {
-    title:"Article One|jayesh",
+    title:'Article One|JAYESH KRISHNAN',
     heading:'Article One',
     date: 'sep 5 2016',
     content:` 
