@@ -7,8 +7,8 @@ app.use(morgan('combined'));
 
 
 var articleOne = {
-    title: 'Article one'|JAYESH ,
-    heading:'Article one',
+    title: 'Article One'|JAYESH ,
+    heading:'Article One',
     date: 'Sep 5,2016',
     content: `
         <p>
@@ -63,7 +63,7 @@ app.get('/', function (req, res) {
 });
 
 app.get('/article-one', function(req,res){
- res.send(createTemplate(articeOne));
+    res.send(createTemplate(articeOne));
   
 });
 
