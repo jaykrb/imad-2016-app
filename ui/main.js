@@ -1,18 +1,24 @@
 var button= document.getElementById('counter');
+var counter =0;
 button.onclick = function (){
-    var request = new XMLhttpRequest();
-    request.onreadystatechange = function (){
-        if(request.readyState===XMLhttpRequest.DONE){
-            if (request.status===200){
-                var counter = request.responceText;
-                var span =document.getElementById('count');
-                span.innerHTML = counter.toString();
-            }
-        }
+
+counter =counter+1;
+var span =document.getElementById('count');
+span.innerHTML = counter.toString();
+};
+
+var nameInput =document.getElementById('name');
+var name = nameInput.value;
+var submit =document.getElementById('submi_btn');
+submit.onclick = function(){
+    var names=["name1","name2","name3","name4"];
+    var list ='';
+    for(var i=0;i=names,length;i++){
+        list += '<li>' + names[i] ='<li>';
         
-    };
-    request.open('GET',"http://jaykrb.imad.hasura-app.io/counter",true);
-    request.send(null);
+    }
+    var ul = document.getElementById('namelist');
+    ul.innerHTML = list;
     
     
 };
